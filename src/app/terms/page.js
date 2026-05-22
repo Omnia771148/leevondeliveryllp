@@ -59,6 +59,19 @@ export default function TermsPage() {
               </a>{" "}
               or {siteConfig.phone}.
             </p>
+
+            <p>
+              <strong className="text-zinc-900">
+                Account Termination and Deletion:
+              </strong>{" "}
+              You may request to delete your account at any time. However, deleting
+              your account does not relieve you of the obligation to pay for any
+              active or pending orders placed prior to the deletion request. Upon
+              deletion, any accumulated promotional credits or wallet balances will
+              be forfeited. {siteConfig.legalName} reserves the right to suspend or
+              permanently terminate your account without notice if we suspect fraud,
+              abuse of our delivery partners, or any violation of these Terms.
+            </p>
           </section>
         </article>
       </main>

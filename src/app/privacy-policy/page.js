@@ -68,10 +68,12 @@ export default function PrivacyPolicyPage() {
                 email address, and profile details you provide during registration.
               </li>
               <li>
-                <strong>Location data:</strong> GPS and address information to show
-                nearby restaurants, calculate delivery fees, assign delivery partners,
-                and provide live order tracking. You may deny location permission, but
-                core delivery features may not work.
+                <strong>Location data:</strong> GPS and address information is
+                collected only while the app is in use (foreground) to show nearby
+                restaurants, calculate delivery fees, assign delivery partners, and
+                provide live order tracking. You may deny location permission, but core
+                delivery features may not work. We do not track your location in the
+                background.
               </li>
               <li>
                 <strong>Order & payment information:</strong> Order history, cart
@@ -138,14 +140,32 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="mt-10">
-            <h2 className="text-xl font-bold text-zinc-900">7. Your rights</h2>
+            <h2 className="text-xl font-bold text-zinc-900">
+              7. Your rights &amp; Account Deletion
+            </h2>
             <p className="mt-3 text-zinc-600 leading-relaxed">
               Under applicable Indian data protection norms, you may request access,
-              correction, deletion, or withdrawal of consent by emailing{" "}
-              <a href={siteConfig.emailHref} className="text-orange-600 hover:underline">
-                {siteConfig.email}
-              </a>
-              . We will respond within a reasonable timeframe.
+              correction, or withdrawal of consent. Importantly, you can request to
+              completely delete your account and all associated personal data at any
+              time.
+            </p>
+            <p className="mt-3 text-zinc-600 leading-relaxed">
+              To request account deletion, you can either:
+            </p>
+            <ul className="mt-4 list-disc space-y-2 pl-6 text-zinc-600">
+              <li>
+                Use the &quot;Delete Account&quot; option inside the App settings.
+              </li>
+              <li>
+                Email us directly at{" "}
+                <a href={siteConfig.emailHref} className="text-orange-600 hover:underline">
+                  {siteConfig.email}
+                </a>{" "}
+                with the subject &quot;Account Deletion Request&quot;.
+              </li>
+            </ul>
+            <p className="mt-3 text-zinc-600 leading-relaxed">
+              We will process your deletion request within a reasonable timeframe.
             </p>
           </section>
 
