@@ -6,7 +6,7 @@ export const metadata = {
     default: siteConfig.appName,
     template: `%s | ${siteConfig.appName}`,
   },
-  description: `${siteConfig.appName} — order from up to ${siteConfig.restaurantCount} local restaurants in ${siteConfig.city}. Android app coming soon.`,
+  description: `${siteConfig.appName} — order from up to ${siteConfig.restaurantCount} local restaurants in ${siteConfig.city}.`,
   keywords: [
     "Leevon Delivery Kurnool Food Delivery App",
     "Leevon Delivery",
@@ -21,6 +21,18 @@ export const metadata = {
     siteName: siteConfig.appName,
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/leevon-logo.png",
+        width: 512,
+        height: 512,
+        alt: siteConfig.brandName,
+      },
+    ],
+  },
+  icons: {
+    icon: "/leevon-logo.png",
+    apple: "/leevon-logo.png",
   },
 };
 

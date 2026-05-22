@@ -36,10 +36,11 @@ export default function Restaurants() {
               Good local restaurants, up to {siteConfig.restaurantCount}
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-zinc-600">
-              {siteConfig.appName} is building a curated network of Kurnool&apos;s
-              favourite food spots — from family restaurants and tiffin centres to
-              biryani houses and evening snack stalls. Our launch partners are
-              selected for reliability, taste, and community reputation.
+              <span className="font-semibold text-zinc-900">{siteConfig.appName}</span>{" "}
+              is building a curated network of Kurnool&apos;s favourite food spots —
+              from family restaurants and tiffin centres to biryani houses and evening
+              snack stalls. Our launch partners are selected for reliability, taste,
+              and community reputation.
             </p>
           </div>
 

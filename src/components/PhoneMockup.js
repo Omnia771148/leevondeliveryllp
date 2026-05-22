@@ -30,7 +30,7 @@ export default function PhoneMockup() {
           </div>
 
           <div className="space-y-2 p-4">
-            {["Spice Garden", "Kurnool Kitchen", "Andhra Meals Hub"].map((name) => (
+            {["Snow Field", "Viva FineDine", "Ruchivedika"].map((name) => (
               <div
                 key={name}
                 className="flex items-center gap-3 rounded-xl bg-white/90 p-3 shadow"

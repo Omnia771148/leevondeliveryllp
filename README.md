@@ -36,6 +36,11 @@ Create a repository and push this project.
 2. Framework preset: **Next.js**  
 3. Deploy — you get a URL like `leevon.vercel.app`
 
+**Remove the Vercel logo bar at the bottom (important):**  
+In Vercel → your project → **Settings** → **General** → **Vercel Toolbar** → set **Preview** and **Production** to **Off**.  
+See [Managing the Vercel Toolbar](https://vercel.com/docs/vercel-toolbar/managing-toolbar).  
+That bar is added by Vercel, not your website code. Visitors and Google reviewers should not see it once disabled.
+
 ### 3. Connect GoDaddy domain (`leevondelivery.in`)
 
 In **Vercel** → Project → **Settings** → **Domains** → Add `leevondelivery.in` and `www.leevondelivery.in`.

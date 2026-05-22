@@ -17,3 +17,14 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Hide Vercel preview toolbar injected on deployments */
+iframe[src*="vercel.live"],
+iframe[src*="vercel.com/toolbar"],
+#vercel-toolbar,
+[data-vercel-toolbar],
+vercel-live-feedback {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

@@ -10,20 +10,14 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24 lg:px-8">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-white px-3 py-1 text-xs font-semibold text-orange-700 shadow-sm">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
-            Coming soon to Android
-          </span>
-
-          <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl lg:text-5xl lg:leading-[1.15]">
+          <h1 className="text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl lg:text-5xl lg:leading-[1.15]">
             <span className="text-orange-600">{siteConfig.appName}</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-600">
             Order from up to {siteConfig.restaurantCount} trusted local restaurants
-            in {siteConfig.city}. We are launching in one city first — built for
-            Kurnool families, students, and professionals who want fast, reliable
-            food delivery.
+            in {siteConfig.city}. Built for Kurnool families, students, and
+            professionals who want fast, reliable food delivery.
           </p>
 
           <div className="mt-8">
