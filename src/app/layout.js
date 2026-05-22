@@ -31,7 +31,11 @@ export const metadata = {
     ],
   },
   icons: {
-    icon: "/leevon-logo.png",
+    icon: [
+      { url: "/leevon-logo.png", type: "image/png", sizes: "512x512" },
+      { url: "/leevon-logo.png", type: "image/png", sizes: "32x32" },
+    ],
+    shortcut: "/leevon-logo.png",
     apple: "/leevon-logo.png",
   },
 };
