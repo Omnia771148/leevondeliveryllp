@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Leevon Delivery Kurnool Food Delivery App — Official Website
 
-## Getting Started
+Next.js marketing site for **LEEVON DELIVERY LLP**, built for Google Play organization verification and public launch in Kurnool.
 
-First, run the development server:
+## Before Google Play submission
+
+Edit **`src/config/site.js`** and set these to match your registrations **exactly**:
+
+1. **Physical address** — same text as D-U-N-S and rental agreement  
+2. **Phone** — same as Play Console developer support phone  
+3. **Email** — same as Play Console developer support email  
+
+Wrong details are a common reason for Play Console rejection.
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Home: `/`
+- Privacy Policy: `/privacy-policy` (required for Play Store)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy (recommended: Vercel + GoDaddy domain)
 
-## Learn More
+### 1. Push to GitHub
 
-To learn more about Next.js, take a look at the following resources:
+Create a repository and push this project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Deploy on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Go to [vercel.com](https://vercel.com) and import your GitHub repo  
+2. Framework preset: **Next.js**  
+3. Deploy — you get a URL like `leevon.vercel.app`
 
-## Deploy on Vercel
+### 3. Connect GoDaddy domain (`leevondelivery.in`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In **Vercel** → Project → **Settings** → **Domains** → Add `leevondelivery.in` and `www.leevondelivery.in`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+In **GoDaddy** → DNS for your domain:
+
+| Type  | Name | Value |
+|-------|------|--------|
+| A     | @    | `76.76.21.21` (Vercel — confirm in Vercel domain setup) |
+| CNAME | www  | `cname.vercel-dns.com` |
+
+DNS can take up to 48 hours. Vercel will issue HTTPS automatically.
+
+### 4. Google Play Console
+
+Use your live URLs:
+
+- **Website:** `https://leevondelivery.in`  
+- **Privacy policy:** `https://leevondelivery.in/privacy-policy`
+
+Ensure footer legal name, address, phone, and email match Play Console entries.
+
+## Build for production
+
+```bash
+npm run build
+npm start
+```
+
+## Tech stack
+
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS 4
+- JavaScript only
