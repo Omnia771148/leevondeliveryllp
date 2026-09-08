@@ -44,6 +44,11 @@ export default function TermsPage() {
               ordering and delivery but are not the food manufacturer.
             </p>
             <p>
+              <strong className="text-zinc-900">Dietary &amp; Food Classification:</strong> Items
+              containing egg or egg derivatives are classified and displayed as{" "}
+              <strong>Non-Vegetarian (Non-Veg)</strong> across the application.
+            </p>
+            <p>
               <strong className="text-zinc-900">Payments:</strong> You agree to pay
               the displayed order total including taxes and delivery fees. Refunds
               follow our customer support policy for valid order issues.
